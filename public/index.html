@@ -11,15 +11,35 @@
     
 </head>
 <body>
-    <h1>Accounting Game</h1>
-    <div id="question"></div>
-    <form action="get">
-        <select name="selectQuestion" id="selectQuestion">
-            <option value="0">1</option>
-            <option value="1">2</option>
-        </select>
-        
-    </form>
+    <h1 id="title" class="regular" >Accounting Game</h1>
+    <div id="question"><h4>What are the entries for ringing up a $100 fee on 6/10 and paying for it on the same day</h4></div>
+<form action="get" id="form">
+    <div class="container">
+        <div>
+            <h5>Cash</h5>
+            <input type="text" name="cash" id="cashDate" placeholder="mm/dd" required>
+            <input type="text" name="cash" id="cashDr" placeholder="Dr" required>
+            <input type="text" name="cash" id="cashCr" placeholder="Cr" required>
+            <select name="cash" id="cashSelect" class="dropdown">
+
+            </select>
+        </div>
+        <div>
+            <h5>Accrual</h5>
+            <input type="text" name="accrual" id="accrualDate" placeholder="mm/dd" required>
+            <input type="text" name="accrual" id="accrualDr" placeholder="Dr" required>
+            <input type="text" name="accrual" id="accrualCr" placeholder="Cr" required>
+            <select name="cash" id="accrualSelect" class="dropdown">
+
+            </select>
+        </div>
+        <!-- <button id="next" value="1" class="toggle">Next</button> -->
+        <button id="submit" type="submit">Submit</button>
+    </div>
+</form>    
+
+    
+
     
 </body>
 </html>

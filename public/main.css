@@ -1,4 +1,55 @@
-#selectQuestion {
-    width: 10%;
-    height: 10%;
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+h1 {
+    text-align: center;
+    margin: 1rem;
+}
+#question {
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    
+}
+input{
+    padding: .5rem;
+    margin: 1rem;
+    border-radius: 6px;
+}
+
+button {
+    margin: 1rem;
+    padding: 5px;
+    border-radius: 6px;
+    width: 25%;
+    font-weight: bold;
+    cursor: pointer;
+}
+.dropdown {
+    padding: .5rem;
+    margin: 1rem;
+    border-radius: 6px;
+    border-width: 2px;
+}
+
+.hidden {
+    display: none;
+}
+.toggle {
+    width: 7%;
+}
+
+.win {
+    color: green;
+}
+.lose {
+    color: red;
 }
